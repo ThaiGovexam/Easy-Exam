@@ -1,0 +1,183 @@
+/* สไตล์พื้นฐานสำหรับระบบข้อสอบ */
+.exam-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.question-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.question-number {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.question-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.options-list {
+    margin-left: 20px;
+}
+
+.option {
+    margin-bottom: 10px;
+}
+
+.option label {
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.exam-controls {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.exam-submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.exam-submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* สไตล์สำหรับผลลัพธ์ */
+.results-summary {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.result-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.result-item.correct {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+}
+
+.result-item.incorrect {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+}
+
+.answer-detail {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.explanation {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-left: 3px solid #ccc;
+}
+
+.loading {
+    display: inline-block;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.retry-exam {
+    background-color: #337ab7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.retry-exam:hover {
+    background-color: #286090;
+}
+
+/* สไตล์การตอบสนองบนมือถือ */
+@media (max-width: 768px) {
+    .question-item {
+        padding: 10px;
+    }
+    
+    .question-text {
+        font-size: 14px;
+    }
+    
+    .option {
+        margin-bottom: 8px;
+    }
+    
+    .exam-submit-btn {
+        width: 100%;
+    }
+}
+
+/* สไตล์เพิ่มเติมสำหรับการนำทาง */
+.exam-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.page-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.page-button.active {
+    background-color: #337ab7;
+    color: white;
+    border-color: #2e6da4;
+}
+
+/* สไตล์สำหรับฟังก์ชันการเลือกคำตอบ */
+.option input:checked + label {
+    font-weight: bold;
+    color: #337ab7;
+}
+
+/* สไตล์สำหรับเวลาทำข้อสอบ */
+.exam-timer {
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+
+.time-warning {
+    color: #d9534f;
+    font-weight: bold;
+}
